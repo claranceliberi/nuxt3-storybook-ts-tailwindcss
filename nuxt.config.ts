@@ -14,7 +14,6 @@ export default defineNuxtConfig({
       },
     modules: [
         '@nuxtjs/tailwindcss',
-        ["@storyblok/nuxt", { accessToken: "<your-access-token>" }]
       ]
 
 })

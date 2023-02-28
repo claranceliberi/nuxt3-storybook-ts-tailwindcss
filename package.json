@@ -5,13 +5,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "storybook": "env NODE_OPTIONS=--openssl-legacy-provider  start-storybook -p 6006 -s ./public,./assets"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.4.1",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-vite": "^0.4.2",
+    "@storybook/vue3": "^6.5.16",
     "nuxt": "^3.2.2"
-  },
-  "dependencies": {
-    "@storyblok/nuxt": "^5.1.0"
   }
 }
