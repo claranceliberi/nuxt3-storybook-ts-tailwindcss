@@ -6,14 +6,33 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "storybook": "env NODE_OPTIONS=--openssl-legacy-provider  start-storybook -p 6006 -s ./public,./assets"
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.4.1",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/builder-vite": "^0.4.2",
-    "@storybook/vue3": "^6.5.16",
-    "nuxt": "^3.2.2"
+    "@storybook/addon-a11y": "^7.0.0-beta.56",
+    "@storybook/addon-actions": "^7.0.0-beta.56",
+    "@storybook/addon-essentials": "^7.0.0-beta.56",
+    "@storybook/addon-links": "^7.0.0-beta.56",
+    "@storybook/addon-mdx-gfm": "^7.0.0-beta.56",
+    "@storybook/vue3": "^7.0.0-beta.56",
+    "@storybook/vue3-vite": "^7.0.0-beta.56",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-markdown": "^2.2.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-storybook": "^0.6.1",
+    "eslint-plugin-vue": "^8.0.1",
+    "nuxt": "^3.2.2",
+    "prettier": "^2.5.0",
+    "prettier-eslint": "^15.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.0-beta.56",
+    "vite-plugin-eslint": "^1.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0 <17.0.0"
   }
 }
