@@ -8,7 +8,20 @@ module.exports = {
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-mdx-gfm"],
+    "@storybook/addon-mdx-gfm",
+    {
+        name: '@storybook/addon-postcss',
+        options: {
+            cssLoaderOptions:{
+                importLoaders: 1,
+            },
+            postcssLoaderOptions: {
+                implementation: require('postcss'),
+            },
+        },
+    },
+
+],
   framework: {
     name: "@storybook/vue3-vite",
     options: {}
