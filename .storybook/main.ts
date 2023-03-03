@@ -2,6 +2,7 @@ const {
   mergeConfig
 } = require("vite");
 const eslintPlugin = require("vite-plugin-eslint").default;
+import VueTypeImports from 'vite-plugin-vue-type-imports'
 
 module.exports = {
   stories: ["../components/**/*.mdx", "../components/**/*.stories.@(js|ts)"],
@@ -9,6 +10,9 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-mdx-gfm",
+    '@storybook/addon-storysource',
+    "storybook-addon-designs",
+
     {
         name: '@storybook/addon-postcss',
         options: {
@@ -33,8 +37,9 @@ module.exports = {
   async viteFinal(previousConfig) {
     return mergeConfig(previousConfig, {
       plugins: [
-
-      eslintPlugin()]
+      eslintPlugin(),
+      VueTypeImports(),
+    ]
     });
   },
   docs: {

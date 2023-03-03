@@ -18,5 +18,5 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
-    modules: ["@nuxtjs/tailwindcss"],
+    modules: ["@nuxtjs/tailwindcss", "vite-plugin-vue-type-imports/nuxt"],
 })
