@@ -5,15 +5,7 @@ module.exports = {
         es2021: true,
         "vue/setup-compiler-macros": true,
     },
-    extends: [
-        "eslint:recommended",
-        "plugin:vue/vue3-essential",
-        "plugin:storybook/recommended",
-        "plugin:markdown/recommended",
-        "plugin:vue/strongly-recommended",
-        "@vue/typescript/recommended",
-        "prettier",
-    ],
+    extends: ["eslint:recommended", "plugin:storybook/recommended", "plugin:markdown/recommended", "@nuxt/eslint-config", "prettier"],
     plugins: ["@typescript-eslint", "prettier", "vitest"],
     parserOptions: {
         ecmaVersion: 2020,

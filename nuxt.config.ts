@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    modules: ["vite-plugin-vue-type-imports/nuxt", "@nuxthq/ui"],
     app: {
         head: {
             charset: "utf-16",
@@ -12,11 +13,17 @@ export default defineNuxtConfig({
             ],
         },
     },
+    typescript: {
+        strict: true,
+    },
     components: [
         {
             path: "~~/components",
             pathPrefix: false,
         },
     ],
-    modules: ["@nuxtjs/tailwindcss", "vite-plugin-vue-type-imports/nuxt"],
+    ui: {
+        global: true,
+        icons: ["heroicons", "simple-icons"],
+    },
 })

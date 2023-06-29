@@ -14,8 +14,10 @@
     "coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@iconify-json/simple-icons": "^1.1.58",
+    "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/test-utils": "^3.2.3",
-    "@nuxtjs/tailwindcss": "^6.4.1",
+    "@nuxthq/ui": "^2.5.0",
     "@storybook/addon-a11y": "^7.0.0-beta.56",
     "@storybook/addon-actions": "^7.0.0-beta.56",
     "@storybook/addon-essentials": "^7.0.0-beta.56",
@@ -40,7 +42,6 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-storybook": "^0.6.1",
     "eslint-plugin-vitest": "^0.0.53",
-    "eslint-plugin-vue": "^8.7.1",
     "jsdom": "^21.1.0",
     "nuxt": "^3.2.2",
     "prettier": "^2.5.0",
@@ -51,10 +52,9 @@
     "storybook-addon-designs": "7.0.0-beta.2",
     "vite-plugin-eslint": "^1.3.0",
     "vite-plugin-vue-type-imports": "^0.2.4",
-    "vitest": "^0.29.2",
-    "vue-eslint-parser": "^9.1.0"
+    "vitest": "^0.29.2"
   },
   "engines": {
-    "node": ">=16.0.0 <17.0.0"
+    "node": ">=18.0.0"
   }
 }
