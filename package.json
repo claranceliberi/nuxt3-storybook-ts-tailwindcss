@@ -11,10 +11,12 @@
     "lint:js": "eslint src --ext .ts,.vue",
     "test:ui": "vitest --ui",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "cypress": "cypress open"
   },
   "devDependencies": {
     "@iconify-json/simple-icons": "^1.1.66",
+    "@nuxt/devtools": "^0.8.0",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/test-utils": "^3.6.5",
     "@nuxthq/ui": "^2.7.0",
