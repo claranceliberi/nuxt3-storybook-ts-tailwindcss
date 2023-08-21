@@ -41,4 +41,11 @@ export default defineNuxtConfig({
         mode: "tunnel",
     },
     },
+    vite:{
+        build: {
+            rollupOptions: {
+              external: ['vue','vue-router','vue/server-renderer']
+            }
+          }
+    }
 })
