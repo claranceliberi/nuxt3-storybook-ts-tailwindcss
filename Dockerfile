@@ -14,7 +14,7 @@ WORKDIR /app
 # Build
 FROM base as build
 WORKDIR /app
-COPY package.json pnpm-lock.yaml .
+COPY package.json pnpm-lock.yaml ./
 # RUN pnpm fetch
 # COPY . .
 RUN pnpm install 
